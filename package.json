@@ -12,6 +12,7 @@
   "dependencies": {
     "@reduxjs/toolkit": "^1.9.5",
     "axi": "^1.0.0",
+    "axios": "^1.5.0",
     "chart.js": "^4.4.0",
     "daisyui": "^3.6.4",
     "react": "^18.2.0",
