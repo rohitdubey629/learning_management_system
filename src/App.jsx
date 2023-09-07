@@ -1,7 +1,12 @@
 import "./App.css";
+import Footer from "./components/Footer";
 
 function App() {
-  return <>lms</>;
+  return (
+    <>
+      <Footer />
+    </>
+  );
 }
 
 export default App;
