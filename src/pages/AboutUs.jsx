@@ -1,5 +1,7 @@
 import React from "react";
 import aboutMainImage from "../assets/Images/aboutMainImage.png";
+import CarouselSlide from "../components/CarouselSlide";
+import { celebrities } from "../constants/CelebritiesData";
 import HomeLayout from "../layout/HomeLayout";
 const AboutUs = () => {
   return (
@@ -32,8 +34,17 @@ const AboutUs = () => {
               />
             </div>
           </div>
+          <div className="carousel w-1/2 m-auto my-16">
+            {celebrities &&
+              celebrities.map((celebrity) => (
+                <CarouselSlide
+                  {...celebrity}
+                  key={celebrity.slideNumber}
+                  totalSlides={celebrities.length}
+                />
+              ))}
+          </div>
         </div>
-        ;
       </HomeLayout>
     </>
   );

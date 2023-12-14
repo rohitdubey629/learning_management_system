@@ -1,5 +1,5 @@
 import React from "react";
-import { BsFacebook, BsInstagram, BsTwitter, BsLinkedin } from "react-icons/bs";
+import { BsFacebook, BsInstagram, BsLinkedin, BsTwitter } from "react-icons/bs";
 
 const Footer = () => {
   const currentDate = new Date();
@@ -8,7 +8,7 @@ const Footer = () => {
   return (
     <div>
       <footer className="relative left-0 bottom-0 h-[10vh] py-4 bg-gray-800 text-white flex flex-col sm:flex-row item-center justify-between ">
-        <section className="text-lg">
+        <section className="text-lg ">
           Copyright {year} | All right reserve
         </section>
         <section className="flex item-center justify-center gap-5 text-2xl text-white ">
