@@ -2,6 +2,7 @@ import { AiFillCloseCircle } from "react-icons/ai";
 import { FiMenu } from "react-icons/fi";
 import { useDispatch, useSelector } from "react-redux";
 import { Link, useNavigate } from "react-router-dom";
+import { logout } from "../Redux/Slices/AuthSlice";
 import Footer from "../components/Footer";
 const HomeLayout = ({ children }) => {
   const dispatch = useDispatch();
@@ -23,11 +24,11 @@ const HomeLayout = ({ children }) => {
     drawerSide[0].style.width = "0";
   }
 
-  function onLogout(e) {
+  async function onLogout(e) {
     e.preventDefault();
-
     // todo
-    navigate("/");
+    const res = await dispatch(logout());
+    if (res?.payload?.success) navigate("/");
   }
 
   return (
