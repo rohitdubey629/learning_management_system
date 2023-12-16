@@ -22,7 +22,7 @@ const CourseList = () => {
           Explore the courses made by
           <span className="font-bold text-yellow-500">Industry experts</span>
         </h1>
-        <div className="md-10 flex flex-wrap gap-14">
+        <div className="md-10 flex flex-wrap gap-14 ">
           {courseData?.map((element) => {
             return <CourseCard key={element._id} data={element} />;
           })}

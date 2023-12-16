@@ -25,11 +25,11 @@ const CourseCard = ({ data }) => {
           </p>
           <p className="font-semibold">
             <span className="text-yellow-500 font-bold">Total Lecture:</span>
-            {data?.numberoflectures}
+            {data?.numberOfLectures}
           </p>
-          <p className="font-semibold">
-            <span className="text-yellow-500 font-bold">Instruction:</span>
-            {data?.createby}
+          <p className="font-semibold ">
+            <span className="text-yellow-500 font-bold ">Instruction:</span>
+            {data?.createdBy}
           </p>
         </div>
       </div>
