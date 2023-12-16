@@ -40,7 +40,7 @@ const HomeLayout = ({ children }) => {
             <FiMenu
               onClick={changeWidth}
               size={"32px"}
-              className="font-bold text-white m-4"
+              className="font-bold text-white m-4 cursor-pointer"
             />
           </label>
         </div>
