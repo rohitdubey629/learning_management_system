@@ -1,6 +1,7 @@
 import { Route, Routes } from "react-router-dom";
 import Denied from "../src/pages/Denied";
 import "./App.css";
+import RequireAuth from "./components/auth/RequireAuth";
 import AboutUs from "./pages/AboutUs";
 import Contact from "./pages/Contact";
 import HomePage from "./pages/HomePage";
@@ -9,6 +10,7 @@ import PageNotFound from "./pages/PageNotFound";
 import Signup from "./pages/Signup";
 import CourseDescription from "./pages/course/CourseDescription";
 import CourseList from "./pages/course/CourseList";
+import CreateCourse from "./pages/course/CreateCourse";
 
 function App() {
   return (
@@ -23,6 +25,9 @@ function App() {
           path="/course/description"
           element={<CourseDescription />}
         ></Route>
+        <Route element={<RequireAuth allowedRoles={["ADMIN"]} />}>
+          <Route path="/course/createCourse" element={<CreateCourse />} />
+        </Route>
 
         <Route path="/contact" element={<Contact />}></Route>
         <Route path="/denied" element={<Denied />}></Route>
