@@ -1,4 +1,5 @@
 import { Route, Routes } from "react-router-dom";
+import Denied from "../src/pages/Denied";
 import "./App.css";
 import AboutUs from "./pages/AboutUs";
 import Contact from "./pages/Contact";
@@ -18,7 +19,7 @@ function App() {
         <Route path="/login" element={<Login />}></Route>
         <Route path="/courses" element={<CourseList />}></Route>
         <Route path="/contact" element={<Contact />}></Route>
-
+        <Route path="/denied" element={<Denied />}></Route>
         <Route path="*" element={<PageNotFound />}></Route>
       </Routes>
     </>
