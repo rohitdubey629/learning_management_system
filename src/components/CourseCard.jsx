@@ -20,15 +20,15 @@ const CourseCard = ({ data }) => {
           </h1>
           <p className="line-clamp-2">{data?.description}</p>
           <p className="font-semibold">
-            <span className="text-yellow-500 font-bold">Category:</span>
+            <span className="text-yellow-500 font-bold">Category : </span>
             {data?.category}
           </p>
           <p className="font-semibold">
-            <span className="text-yellow-500 font-bold">Total Lecture:</span>
+            <span className="text-yellow-500 font-bold">Total Lecture : </span>
             {data?.numberOfLectures}
           </p>
           <p className="font-semibold ">
-            <span className="text-yellow-500 font-bold ">Instruction:</span>
+            <span className="text-yellow-500 font-bold ">Instruction : </span>
             {data?.createdBy}
           </p>
         </div>

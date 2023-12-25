@@ -30,13 +30,13 @@ const Profile = () => {
           </div>
           <div className="flex items-center justify-between gap-2">
             <Link
-              to={"/changepassword"}
+              to={"/changePassword"}
               className="w-1/2 bg-yellow-600 hover:bg-yellow-500 transition-all ease-in-out duration-300 rounded-sm font-semibold py-2 cursor-pointer text-center"
             >
               <button>Change Password</button>
             </Link>
             <Link
-              to={"/user/editprofile"}
+              to={"/user/editProfile"}
               className="w-1/2 bg-yellow-600 hover:bg-yellow-500 transition-all ease-in-out duration-300 rounded-sm font-semibold py-2 cursor-pointer text-center"
             >
               <button>Edit Profile</button>

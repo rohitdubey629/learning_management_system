@@ -11,6 +11,7 @@ import Signup from "./pages/Signup";
 import CourseDescription from "./pages/course/CourseDescription";
 import CourseList from "./pages/course/CourseList";
 import CreateCourse from "./pages/course/CreateCourse";
+import EditProfile from "./pages/user/EditProfile";
 import Profile from "./pages/user/Profile";
 
 function App() {
@@ -31,6 +32,7 @@ function App() {
         </Route>
         <Route element={<RequireAuth allowedRoles={["ADMIN", "USER"]} />}>
           <Route path="/user/profile" element={<Profile />} />
+          <Route path="user/editProfile" element={<EditProfile />} />
         </Route>
 
         <Route path="/contact" element={<Contact />}></Route>
